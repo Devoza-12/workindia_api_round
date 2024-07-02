@@ -1,6 +1,6 @@
 const router = require("express").Router();
-const { getUsers } = require("./feed.controller");
+const { getShorts } = require("./feed.controller");
 
-router.get("/", getUsers);
+router.get("/", getShorts); // Assign getShorts as the callback function
 
 module.exports = router;
